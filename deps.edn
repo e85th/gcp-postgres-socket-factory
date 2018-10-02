@@ -1,0 +1,7 @@
+{:deps
+ {com.google.cloud.sql/postgres-socket-factory {:mvn/version "1.0.5"}}
+ :aliases
+ {:uberjar {:extra-deps
+            {luchiniatwork/cambada {:git/url "git@github.com:xfthhxk/cambada.git"
+                                    :sha "6f94883ef2d58817aa0e6f5041caec5ccd75af77"}}
+            :main-opts ["-m" "cambada.uberjar" "--no-merge-config"]}}}
