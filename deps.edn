@@ -1,14 +1,14 @@
 {:deps
- {com.google.cloud.sql/postgres-socket-factory {:mvn/version "1.0.5"}
+ {com.google.cloud.sql/postgres-socket-factory {:mvn/version "1.0.12"}
   ;; for Java 11+ modules
   javax.xml.bind/jaxb-api {:mvn/version "2.1"}}
 
  :aliases
  {:uberjar {:extra-deps
-            {luchiniatwork/cambada {:git/url "git@github.com:xfthhxk/cambada.git"
+            {luchiniatwork/cambada {:git/url "https://github.com/xfthhxk/cambada.git"
                                     :sha "8fdc7d29a41620ad3e9e6210fd7140f3a4c7936b"}}
             :main-opts ["-m" "cambada.uberjar" "--no-merge-config"]}}
- 
+
    :mvn/repos {
      "central" {:url "https://repo1.maven.org/maven2/"}
      "clojars" {:url "https://repo.clojars.org/"}
